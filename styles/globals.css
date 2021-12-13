@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.bgImage{
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  background-blend-mode: darken;
+  background-color: rgb(250, 240, 240);
+  transition: all 0.10s ease;
+  -webkit-transition: all 0.10s ease;
+  -moz-transition: all 0.10s ease;
+  -ms-transition: all 0.10s ease;
+  -o-transition: all 0.10s ease;
+}
+.bgImage:hover{
+  background-color: #fff;
+}
+
+/* custom class */
+.container {
+  @apply w-full mx-auto px-10;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px !important;
+  }
+  .userImg {
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
